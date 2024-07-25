@@ -7,7 +7,7 @@
   extraSpecialArgs = {inherit inputs self;};
 
   homeImports = {
-    "linuxmobile@aesthetic" = [
+    "kry@aesthetic" = [
       ../.
       ./aesthetic
     ];
@@ -21,8 +21,8 @@ in {
 
   flake = {
     homeConfiguration = {
-      "linuxmobile_aesthetic" = homeManagerConfiguration {
-        modules = homeImports."linuxmobile@aesthetic";
+      "kry_aesthetic" = homeManagerConfiguration {
+        modules = homeImports."kry@aesthetic";
         inherit pkgs extraSpecialArgs;
       };
     };
